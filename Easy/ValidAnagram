@@ -1,0 +1,18 @@
+using namespace std;
+
+class Solution {
+public:
+    bool isAnagram(string s, string t) {
+        //checks the length of text s and text t.. if their not equal return false
+     if (s.size() != t.size())
+        return false;
+
+    //sort the letters from A to Z
+      sort(s.begin(), s.end());
+      //Sort the letters from A to Z
+      sort(t.begin(), t.end());
+
+    //compare s and t if they are the same return true
+      return s == t;  
+    }
+};
